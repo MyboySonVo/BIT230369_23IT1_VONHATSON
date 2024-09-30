@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+        }
+        header, footer {
+            background: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .column {
+            background: #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <title>Grid Layout</title>
+</head>
+<body>
+    <header>Header</header>
+    <div class="container">
+        <div class="column">Column</div>
+        <div class="column">Column</div>
+        <div class="column">Column</div>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
